@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/9b4576d473.js" crossorigin="anonymous"></script>
+
+
+    <title>MyMail</title>
+  </head>
+  <body>
+
+    <section class="container">
+      <h1><span style="color: #FFC857;">My</span><span style="color: #E9724C;">Mail</span></h1>
+      <h2>Log in</h2>
+      <div class="input-box">
+     
+          <input type="text" class="login-input sign-in__login" required></input>
+        <span>Login</span>
+      </div>
+      <div class="input-box">
+        <input type="password" class="password-input sign-in__password" required></input>
+        <span>Password</span>
+      </div>
+      <button type="submit" class="submit-button">Log In</button>  
+      <h2>or</h2>
+      <button type="submit" id="register-button" class="register-button">Register</button>
+    </div>
+    </section>
+
+    <section class="container-registration">
+      <h1><span style="color: #FFC857;">My</span><span style="color: #E9724C;">Mail</span></h1>
+      <h2>Register</h2>
+      <div class="input-box">
+        <input type="text" class="login-input register-name" required></input>
+      <span>Your name</span>
+    </div>
+      <div class="input-box">
+          <input type="text" class="login-input register-login" required></input>
+        <span>Login</span>
+      </div>
+      <div class="input-box">
+        <input type="password" class="password-input register-password" required></input>
+        <span>Password</span>
+      </div>
+      <button type="submit" id="register-button__comfirm" class="register-button">Register</button>  
+    </div>
+    </section>
+
+
+    <section class="main-page">
+      <div class="navbar">
+        <h1 class="logo"><span style="color: #FFC857;">My</span><span style="color: #E9724C;">Mail</span></h1>
+        <div class="welcome-text">
+          <h1></h1>
+        </div>
+        <div class="newmail-box">
+          <div class="new-mail">Create mail</div>
+        </div>
+        <div class="folder__container">
+          <div class="inbox mail-folder fa-hover">
+            <i class="fa fa-solid fa-envelope"></i>
+            <span>Inbox</span>
+          </div>
+          <div class="sent mail-folder fa-hover">
+            <i class="fa fa-solid fa-paper-plane"></i>
+            <span>Sent</span>
+          </div>
+          <div class="important mail-folder fa-hover">
+            <i class="fa fa-regular fa-star"></i>
+            <span>Important</span>
+          </div>
+          <div class="logout">Log Out</div>
+        </div>
+        
+      </div>
+
+
+
+      <div class="content">
+        <div class="input-serach">
+          <input type="text" class="search" placeholder="Search:"/>
+          <i class="fa-solid fa-magnifying-glass search-button"></i>
+        </div>
+        
+        
+        
+
+        <div class="mails">
+        </div>
+      </div>
+
+    </section>
+    <div class="new__mail--window">
+      <div>
+        <select id="mail-receiver" name="mail-receiver" required>
+          <option disabled selected hidden class="send-to">To</option>
+          
+          
+        </select>
+
+        <input placeholder="Subject" class="new__mail--title" required>
+        <textarea class="main-mail-content" rows="20"></textarea>
+        <div class="div-button">
+          <button type="submit" class="send-mail">Send</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="show-mail">
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
